@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:slideswitch="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:context=".MainActivity"
+>
+    <com.iflytek.rcustomview.slideswitch.SlideSwitch
+            android:id="@+id/sw_circle"
+            android:gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            slideswitch:isOpen="false"
+            slideswitch:shape="circle"
+            slideswitch:closeColor="@color/colorAccent"
+            slideswitch:openColor="@color/darkturquoise"/>
+
+
+    <com.iflytek.rcustomview.slideswitch.SlideSwitch
+            android:id="@+id/sw_rect"
+            android:layout_above="@id/sw_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            slideswitch:isOpen="false"
+            slideswitch:shape="rect"
+            slideswitch:sliderColor="@color/colorAccent"
+            slideswitch:closeColor="@color/colorPrimary"
+            slideswitch:openColor="@color/darkturquoise"/>
+</RelativeLayout>

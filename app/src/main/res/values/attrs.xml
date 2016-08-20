@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LockPatternView class attributes -->
+    <declare-styleable name="LockPatternView">
+
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        <attr name="line" format="color" />
+        <attr name="btnNormal" format="reference" />
+        <attr name="btnTouched" format="reference" />
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleGreen" format="reference" />
+        <attr name="circleRed" format="reference" />
+        <attr name="arrowGreenUp" format="reference" />
+        <attr name="arrowRedUp" format="reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="slideswitch">
+        <attr name="openColor" format="color" />
+        <attr name="closeColor" format="color" />
+        <attr name="sliderColor" format="color" />
+
+
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="SlideView">
+        <attr name="maskText" format="string" />
+        <attr name="maskTextSize" format="dimension" />
+        <attr name="maskTextMarginLeft" format="dimension" />
+        <attr name="maskTextMarginTop" format="dimension" />
+        <attr name="slider" format="reference" />
+        <attr name="sliderMarginLeft" format="dimension" />
+        <attr name="sliderMarginTop" format="dimension" />
+        <attr name="slidableLength" format="dimension" />
+        <attr name="effectiveLength" format="dimension" />
+        <attr name="effectiveVelocity" format="dimension" />
+    </declare-styleable>
+
+    <!--<declare-styleable>声明自定义属性-->
+    <declare-styleable name="CircleView">
+        <!--<attr>声明具体自定义属性-->
+        <attr name="circle_color" format="color" />
+    </declare-styleable>
+
+</resources>
